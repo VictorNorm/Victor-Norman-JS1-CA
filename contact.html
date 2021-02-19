@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Contact</h1>
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <form action="" class="form">
+        <div class="form-div">
+            <label for="name">Your full name. (Required)</label>
+            <input type="name" id="name">
+            <div class="nameError">Name invalid, please try another.</div>
+        </div>
+        <div class="form-div">
+            <label for="subject">Subject. (Minimum 10 characters)</label>
+            <input type="text" id="subject">
+            <div class="subjectError">Too short, please try again.</div>
+        </div>
+        <div class="form-div">
+            <label for="email">Your e-mail.</label>
+            <input type="email" id="email">
+            <div class="emailError">E-mail invalid, please try again.</div>
+        </div>
+        <div class="form-div">
+            <label for="adress">Adress. (Minimum 25 characters)</label>
+            <input type="adress" id="adress">
+            <div class="adressError">Adress too short, please try another</div>
+        </div>
+        <button type="submit" class="submit" id="submit">Submit.</button>
+        <div class="submitSuccess">
+            <p>Success.</p>
+            
+        </div>
+    </form>
+    <script src="script/jscontact.js"></script>
+</body>
+
+</html>
