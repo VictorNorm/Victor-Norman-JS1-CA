@@ -4,6 +4,8 @@ const allContainer = document.querySelector(".allContainer");
 
 const loadingSpinner = document.querySelector(".loadingSpinner");
 
+const errorDisplay = document.querySelector(".errorDisplay");
+
 async function getMovieTitles() {
 
     try{
@@ -36,6 +38,9 @@ async function getMovieTitles() {
     }
 
     catch(error) {
+        loadingSpinner.classList = "";
+        errorDisplay.style.display = "block";
+        errorDisplay.innerHTML = error;
         console.log(error);
     }
 }

@@ -14,6 +14,8 @@ const errorContainer = document.querySelector(".errorContainer")
 
 const loadingSpinner = document.querySelector(".loadingSpinner");
 
+const errorDisplay = document.querySelector(".errorDisplay");
+
 async function getMovieID() {
 
     try {
@@ -46,7 +48,9 @@ async function getMovieID() {
 
     } catch (error) {
         console.log(error)
-        errorContainer.innerHTML = `An error has occured: ${error}`
+        loadingSpinner.classList = "";
+        errorDisplay.style.display = "block";
+        errorDisplay.innerHTML = error;
     }
 }
 
